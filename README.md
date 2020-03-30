@@ -54,6 +54,60 @@ topics:       /vibe_ros/left/camera_info       918 msgs    : sensor_msgs/CameraI
               /vibe_ros/right/image_rect_raw   918 msgs    : sensor_msgs/Image
 ```
 
+### Calibration
+```
+/zed/zed_node/left/camerinfo
+header: 
+  seq: 4479
+  stamp: 
+    secs: 1584868041
+    nsecs: 609379320
+  frame_id: "zed_left_camera_optical_frame"
+height: 376
+width: 672
+distortion_model: "plumb_bob"
+D: [0.0, 0.0, 0.0, 0.0, 0.0]
+K: [263.76385498046875, 0.0, 343.8626708984375, 0.0, 263.76385498046875, 185.25424194335938, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [263.76385498046875, 0.0, 343.8626708984375, 0.0, 0.0, 263.76385498046875, 185.25424194335938, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+---
+```
+
+```
+/zedm/zed_node/left/camera_info
+header: 
+  seq: 9348
+  stamp: 
+    secs: 1584868042
+    nsecs: 585011564
+  frame_id: "zedm_left_camera_optical_frame"
+height: 376
+width: 672
+distortion_model: "plumb_bob"
+D: [0.0, 0.0, 0.0, 0.0, 0.0]
+K: [331.7231140136719, 0.0, 317.70501708984375, 0.0, 331.7231140136719, 193.75619506835938, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [331.7231140136719, 0.0, 317.70501708984375, 0.0, 0.0, 331.7231140136719, 193.75619506835938, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+---
+```
+
+
 ### Converting lz4 Compressed Bag File to .zip
 
 ``` bash
