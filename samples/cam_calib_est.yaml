@@ -1,0 +1,27 @@
+cam0:
+  camera_model: pinhole
+  # intrinsics: pinhole: [fu fv pu pv]
+  intrinsics: [263.76385498046875, 263.76385498046875, 343.8626708984375, 185.25424194335938]
+  resolution: [672, 376]
+  rostopic: /vibe_ros/left/camera_info
+  # distortion model: (distortion_coeffs: [k1 k2 r1 r2])
+  T_w_c: [
+    [-0.913545457642601,   -0.4067366430758,                  0,                  0],
+    [   0.4067366430758, -0.913545457642601,                  0,                  0],
+    [                 0,                  0,                  1,                  0],
+    [                 0,                  0,                  0,                  1]
+  ]
+
+
+cam1:
+  camera_model: pinhole
+  # intrinsics: pinhole: [fu fv pu pv]
+  intrinsics: [331.7231140136719, 331.7231140136719, 331.7231140136719, 193.75619506835938]
+  resolution: [672, 376]
+  rostopic: /vibe_ros/right/camera_info
+  T_w_c: [
+    [-0.325568154457157,  0.945518575599317,                  0,   4.40202472353943],
+    [-0.945518575599317, -0.325568154457157,                  0,   -2.5733593478851],
+    [                 0,                  0,                  1,                  0],
+    [                 0,                  0,                  0,                  1]
+  ]

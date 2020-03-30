@@ -10,6 +10,8 @@ The left and right camera data are time synchronised using approximate sync poli
 
 Each camera is recorded on different computers, using its own Unit time.
 
+**Note**: The .bag file is compressed by --lz4 option, but MATLAB does not support reading compressed .bag file. Hence, for MATLAB use, please use the dataset in the .zip file instead.
+
 ### Run 1
 
 ```
@@ -51,5 +53,14 @@ topics:       /vibe_ros/left/camera_info       918 msgs    : sensor_msgs/CameraI
               /vibe_ros/right/camera_info      918 msgs    : sensor_msgs/CameraInfo
               /vibe_ros/right/image_rect_raw   918 msgs    : sensor_msgs/Image
 ```
+
+### Converting lz4 Compressed Bag File to .zip
+
+``` bash
+rosbag decompress <bag> | 
+zip <bag_decompressed_name> <bag>
+```
+
+
 ### Screenshots
 ![Preview of Dataset](./vibe_datasets.png)
